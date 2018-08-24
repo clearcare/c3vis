@@ -9,7 +9,7 @@ FROM node:9.11.1-alpine
 
 # build base includes g++ and gcc and Make
 RUN apk update && apk add python build-base
-
+RUN apk --no-cache add curl
 # << END FIX
 
 # Bundle app source
